@@ -165,7 +165,8 @@
   }
 
   .modal .description #image-price,
-  .modal .description #image-bidders {
+  .modal .description #image-bidders,
+  .model .description #image-artist {
     font-weight: bold;
   }
 
