@@ -46,6 +46,7 @@
     margin: 20px 0;
     background-color: #333; /* Navbar styling */
     padding: 10px; /* Navbar styling */
+    flex-wrap: wrap; /* Make the Navbar available on smaller screen */
   }
   
   .navbar a {
@@ -96,7 +97,7 @@
   }
   
   .content-table th {
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
   }
   
@@ -146,9 +147,9 @@
   
   .close-btn {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 1.5em;
+    top: 60px;
+    right: 60px;
+    font-size: 3.0em;
     color: white;
     cursor: pointer;
   }
@@ -172,11 +173,49 @@
   .page-footer {
     background-color: #333; /* Same as navbar or a different color */
     color: white;
-    padding: 10px; /* Styles to make footer stick to the bottom */
-    text-align: center;
+    padding: 10px 20px;/* Styles to make footer stick to the bottom */
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
   }
 
-  .page-footer p {
-    margin: 10px 0; /* Adds vertical spacing between paragraphs */
+  .footer-left, .footer-right {
+    flex: 1;
+  }
+
+  .footer-left p, .footer-right p {
+    margin: 5px 0;
   }
   
+  .footer-left {
+    text-align: left;
+  }
+
+  .footer-right {
+    text-align: right;
+  }
+
+  /* Default styles for larger screens */
+.navbar, .content-container, .page-footer {
+  padding: 20px;
+  /* other styles */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .navbar, .content-container, .page-footer {
+      padding: 10px;
+  }
+
+  .navbar a {
+      display: block;
+      padding: 8px;
+      text-align: center;
+      width: 100%; /* Stack links vertically */
+  }
+
+  .content-container {
+      display: block;
+      width: 100%;
+  }
+}
