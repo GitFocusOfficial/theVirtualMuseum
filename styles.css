@@ -41,15 +41,25 @@
     display: flex;
     justify-content: center;
     margin: 20px 0;
+    background-color: #333; /* Navbar styling */
+    padding: 10px; /* Navbar styling */
   }
   
   .navbar a {
     margin: 0 15px;
     text-decoration: none;
-    color: #333;
+    color: #ffffff; /* Navbar styling */
     font-weight: bold;
+    padding: 10px 15px; /* Navbar styling */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Navbar styling */
   }
   
+  .navbar a:hover {
+    background-color: #555; /* Highlight color on hover */
+    color: #FFD700; /* Optional: change text color on hover */
+  }
+
+  /* Hover effect for navbar links */
   .content-container {
     display: flex;
     flex-direction: column;
@@ -134,5 +144,17 @@
     font-size: 1.5em;
     color: white;
     cursor: pointer;
+  }
+
+  /* Add background color to the page footer */
+  .page-footer {
+    background-color: #333; /* Same as navbar or a different color */
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .page-footer p {
+    margin: 10px 0; /* Adds vertical spacing between paragraphs */
   }
   
