@@ -212,10 +212,21 @@
       padding: 8px;
       text-align: center;
       width: 100%; /* Stack links vertically */
+      display: none; /* Hide navbar links on small screens */
   }
 
   .content-container {
       display: block;
       width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar a {
+    display: inline-block;
+  }
+
+  .hamburger {
+    display: none;
   }
 }

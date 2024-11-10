@@ -11,3 +11,7 @@ function openModal(image, description, price, bidders) {
     document.getElementById("modal").style.display = "none";
   }
   
+  function toggleNavbar() {
+    const navbar = document.querySelector('.navbar');
+    navbar.style.display = navbar.style.display === 'block' ? 'none' : 'block';
+  }
