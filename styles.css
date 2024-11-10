@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .museum-image {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .enter-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+  }
+  
+  .page-header, .page-footer {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .table-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .table-container .content-table {
+    width: 80%;
+    border-spacing: 0;
+  }
+  
+  .content-table th, .content-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .content-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .img-clickable {
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .img-clickable:hover {
+    transform: scale(1.1);
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .modal img {
+    max-width: 50%;
+    border-radius: 10px;
+  }
+  
+  .modal .description {
+    margin-left: 20px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+  }
+  
