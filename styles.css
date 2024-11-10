@@ -218,6 +218,11 @@
       display: block;
       width: 100%;
   }
+
+  .content-table {
+    width: 100%;
+    overflow-x: auto;
+  }
 }
 
 @media (min-width: 768px) {
@@ -228,4 +233,9 @@
   .hamburger {
     display: none;
   }
+}
+
+.content-container, .navbar, .page-footer {
+  width: 100%;
+  max-width: 100%;
 }
