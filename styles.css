@@ -119,13 +119,16 @@
   }
   
   .modal-content {
-    background-color: white;
+    background-color: #333;
     width: 80%;
     max-width: 800px;
     padding: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ddd;
   }
   
   .modal img {
@@ -144,6 +147,21 @@
     font-size: 1.5em;
     color: white;
     cursor: pointer;
+  }
+
+  /* Styles for Modal Content */
+  .modal .description p {
+    margin-bottom: 10px; /* Adds space between each text line */
+  }
+
+  .modal .description #image-desc {
+    font-size: 1.1em;
+    margin-bottom: 15px; /* Adds extra space for readability */
+  }
+
+  .modal .description #image-price,
+  .modal .description #image-bidders {
+    font-weight: bold;
   }
 
   /* Add background color to the page footer */
