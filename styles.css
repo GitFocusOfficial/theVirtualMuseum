@@ -33,10 +33,11 @@
   .enter-btn {
     padding: 10px 20px;
     font-size: 1.2em;
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
   }
 
   .video-container {
@@ -50,6 +51,7 @@
   .video-left, .video-right {
     width: 45%;
     height: 200px;
+    border-radius: 20px;
   }
   
   .navbar {
