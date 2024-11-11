@@ -38,6 +38,19 @@
     border: none;
     cursor: pointer;
   }
+
+  .video-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+  }
+  
+  .video-left, .video-right {
+    width: 45%;
+    height: 200px;
+  }
   
   .navbar {
     width: 100%;
